@@ -1,0 +1,10 @@
+speed <- c(78.3, 81.8, 82, 74.2, 83.4,
+           84.5, 82.9, 77.5, 80.9, 70.6)
+Q1 <- quantile(speed, 0.25)
+Q3 <- quantile(speed, 0.75)
+IQR_value <- IQR(speed)
+SD <- sd(speed)
+cat("First Quartile (Q1):", Q1, "\n")
+cat("Third Quartile (Q3):", Q3, "\n")
+cat("Interquartile Range:", IQR_value, "\n")
+cat("Standard Deviation:", SD, "\n")
